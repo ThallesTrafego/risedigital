@@ -30,7 +30,7 @@ const Index = () => {
       <section className="section-spacing relative z-10">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="section-title mb-8">
+            <h2 className="section-title">
               Experiência validada em múltiplos segmentos
             </h2>
             <p className="text-lg md:text-xl text-foreground leading-relaxed mb-12 max-w-4xl mx-auto">
@@ -73,7 +73,7 @@ const Index = () => {
       <section className="section-spacing relative z-10">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title mb-8">
+            <h2 className="section-title">
               Por que muitos empresários não têm retorno no digital?
             </h2>
             <p className="text-lg md:text-xl text-foreground leading-relaxed max-w-3xl mx-auto">
@@ -87,7 +87,7 @@ const Index = () => {
       <section className="section-spacing relative z-10">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="section-title mb-8">
+            <h2 className="section-title">
               As 3 Bases do Crescimento Digital
             </h2>
             <p className="text-lg md:text-xl text-foreground leading-relaxed mb-16 max-w-4xl mx-auto">
@@ -133,7 +133,7 @@ const Index = () => {
       <section className="section-spacing relative z-10">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="section-title mb-8">
+            <h2 className="section-title">
               Estratégia antes de ferramentas. Sempre.
             </h2>
             <p className="text-lg md:text-xl text-foreground leading-relaxed mb-16 max-w-4xl mx-auto">
@@ -185,7 +185,7 @@ const Index = () => {
       <section className="section-spacing relative z-10">
         <div className="container-custom">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="section-title mb-8">
+            <h2 className="section-title">
               Nossos clientes falam por nós
             </h2>
             <p className="text-lg md:text-xl text-foreground leading-relaxed mb-16 max-w-4xl mx-auto">
@@ -281,7 +281,7 @@ const Index = () => {
       <section className="section-spacing relative z-10">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="section-title mb-8">
+            <h2 className="section-title">
               Agenda limitada para novos clientes
             </h2>
             
@@ -311,7 +311,7 @@ const Index = () => {
       <section className="section-spacing relative z-10">
         <div className="container-custom text-center">
           <div className="max-w-5xl mx-auto">
-            <h2 className="section-title mb-8">
+            <h2 className="section-title">
               Rise Digital – Estratégia, Clareza e Crescimento Real
             </h2>
             <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-12 max-w-4xl mx-auto">

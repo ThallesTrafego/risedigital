@@ -158,7 +158,7 @@
 
   /* Section Spacing */
   .section-spacing {
-    @apply py-16 md:py-24;
+    @apply py-12 md:py-16;
   }
 
   /* Container with margins */
@@ -169,24 +169,27 @@
   /* Section Title Styles - Consistent sizing and proper line-height */
   .section-title {
     @apply font-bold gradient-title font-bebas;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 1.3;
-    padding-bottom: 4px;
+    padding-bottom: 6px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: 768px) {
     .section-title {
-      font-size: 32px;
+      font-size: 40px;
       line-height: 1.25;
-      padding-bottom: 6px;
+      padding-bottom: 8px;
+      margin-bottom: 32px;
     }
   }
 
   @media (min-width: 1024px) {
     .section-title {
-      font-size: 32px;
+      font-size: 44px;
       line-height: 1.25;
-      padding-bottom: 6px;
+      padding-bottom: 8px;
+      margin-bottom: 32px;
     }
   }
 }
