@@ -11,7 +11,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="section-spacing py-20 md:py-32 relative z-10">
         <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-title mb-8 leading-tight max-w-5xl mx-auto font-bebas">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-title mb-8 leading-tight max-w-5xl mx-auto font-doppio">
             Enquanto seus concorrentes colecionam curtidas, nós construímos seu faturamento.
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-foreground/90 mb-12 max-w-4xl mx-auto leading-relaxed">
@@ -99,7 +99,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6">
                   <Target className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-bebas">Sistema de Aquisição de Clientes</h3>
+                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-doppio">Sistema de Aquisição de Clientes</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   Campanhas de tráfego pago no Google & Meta Ads para atrair clientes com alto potencial de compra.
                 </p>
@@ -109,7 +109,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6">
                   <Globe className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-bebas">Ativo Digital de Conversão</h3>
+                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-doppio">Ativo Digital de Conversão</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   Landing pages e sites institucionais de alta performance focados em conversão.
                 </p>
@@ -119,7 +119,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6">
                   <MessageCircle className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-bebas">Inteligência de Atendimento e Vendas</h3>
+                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-doppio">Inteligência de Atendimento e Vendas</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   Automação / inteligência no WhatsApp com atendimento 24/7 para qualificar leads e não deixar oportunidades escaparem.
                 </p>
@@ -145,7 +145,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   <Search className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-bebas">Diagnóstico Estratégico</h3>
+                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-doppio">Diagnóstico Estratégico</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   Mapeamos seu mercado, identificamos oportunidades ocultas e entendemos onde sua empresa quer chegar.
                 </p>
@@ -155,7 +155,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   <MapPin className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-bebas">Plano de Crescimento</h3>
+                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-doppio">Plano de Crescimento</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   Criamos uma rota clara e prática para transformar marketing em faturamento real.
                 </p>
@@ -165,7 +165,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   <Rocket className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-bebas">Execução e Escala</h3>
+                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-doppio">Execução e Escala</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   Implementamos campanhas, otimizamos continuamente e escalamos seus resultados mês após mês.
                 </p>
@@ -194,7 +194,7 @@ const Index = () => {
             
             {/* Logo Section */}
             <div className="mb-16">
-              <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-8 font-bebas">Empresas que confiam na Rise</h3>
+              <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-8 font-doppio">Empresas que confiam na Rise</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-70">
                 <div className="h-16 bg-card/30 rounded-lg flex items-center justify-center border border-border/30">
                   <span className="text-foreground/60 font-semibold">Logo Cliente 1</span>
@@ -213,7 +213,7 @@ const Index = () => {
 
             {/* Feedback Section */}
             <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-8 font-bebas">O que nossos clientes dizem</h3>
+              <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-8 font-doppio">O que nossos clientes dizem</h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 text-left relative">
                   <Quote className="w-8 h-8 text-primary/30 absolute top-4 right-4" />

@@ -14,6 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
+        'doppio': ['Doppio One', 'sans-serif'],
         'bebas': ['Bebas Neue', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
       },
