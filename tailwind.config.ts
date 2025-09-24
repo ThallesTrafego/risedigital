@@ -17,6 +17,7 @@ export default {
         'doppio': ['Doppio One', 'sans-serif'],
         'bebas': ['Bebas Neue', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
+        'outfit': ['Outfit', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
