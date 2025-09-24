@@ -19,7 +19,7 @@ const Index = () => {
             ajudamos empresas a transformar marketing em crescimento real e previsível.
           </p>
           <div className="flex justify-center">
-            <Button variant="hero" size="lg" className="text-xl px-12 py-6 h-auto">
+            <Button variant="hero" size="lg">
               Quero Crescer com a Rise
             </Button>
           </div>
@@ -173,7 +173,7 @@ const Index = () => {
             </div>
 
             <div className="flex justify-center">
-              <Button variant="hero" size="lg" className="text-lg px-10 py-5 h-auto">
+              <Button variant="hero" size="lg">
                 Quero um plano de crescimento para minha empresa
               </Button>
             </div>
@@ -269,7 +269,7 @@ const Index = () => {
             </div>
 
             <div className="flex justify-center">
-              <Button variant="hero" size="lg" className="text-lg px-10 py-5 h-auto">
+              <Button variant="hero" size="lg">
                 Quero ter resultados assim com a Rise
               </Button>
             </div>
@@ -299,7 +299,7 @@ const Index = () => {
             </div>
 
             <div className="flex justify-center">
-              <Button variant="hero" size="lg" className="text-xl px-12 py-6 h-auto animate-pulse">
+              <Button variant="hero" size="lg" className="animate-pulse">
                 Quero meu projeto com a Rise
               </Button>
             </div>
@@ -318,7 +318,7 @@ const Index = () => {
               Mais do que marketing genérico, entregamos uma rota clara para aumentar o faturamento da sua empresa com consistência e transparência. Não se trata apenas de anúncios, mas de construir previsibilidade e crescimento sustentável para o seu negócio.
             </p>
             <div className="flex justify-center">
-              <Button variant="hero" size="lg" className="text-xl px-12 py-6 h-auto">
+              <Button variant="hero" size="lg">
                 Clique aqui e fale com nosso time no WhatsApp
               </Button>
             </div>
