@@ -21,6 +21,11 @@
     --primary: 208 100% 50%;           /* #0084FF - Medium blue */
     --primary-light: 196 100% 50%;     /* #00C1FF - Light blue */
     --primary-foreground: 0 0% 100%;   /* White text on blue */
+    
+    /* Text Gradient Colors - Left to Right Blue Gradient */
+    --gradient-start: 188 100% 50%;    /* #00CIFF - Bright cyan */
+    --gradient-middle: 204 100% 50%;   /* #00A9FF - Intermediate blue */
+    --gradient-end: 208 100% 50%;      /* #0084FF - Darker blue */
 
     /* Secondary and Muted */
     --secondary: 207 67% 12%;
@@ -109,9 +114,9 @@
 
 /* Custom Gradients and Animations */
 @layer utilities {
-  /* Blue Gradient for Titles */
+  /* Blue Gradient for Titles - Left to Right */
   .gradient-title {
-    background: linear-gradient(135deg, hsl(var(--primary-light)), hsl(var(--primary)));
+    background: linear-gradient(90deg, hsl(var(--gradient-start)), hsl(var(--gradient-middle)), hsl(var(--gradient-end)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
