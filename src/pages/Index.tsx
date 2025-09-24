@@ -2,11 +2,28 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { TrendingUp, Users, Award, Target, Globe, MessageCircle, Search, MapPin, Rocket, Star, Quote, Clock } from "lucide-react";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import logoSvg from "@/assets/logo-rise-digital.svg";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       <AnimatedBackground />
+      
+      {/* Header */}
+      <header className="relative z-20 py-4 md:py-6">
+        <div className="container-custom">
+          <div className="flex items-center">
+            <a href="/" className="flex-shrink-0" aria-label="Rise Digital - Página inicial">
+              <img 
+                src={logoSvg} 
+                alt="Rise Digital" 
+                className="h-9 md:h-12 w-auto transition-opacity hover:opacity-80"
+                loading="eager"
+              />
+            </a>
+          </div>
+        </div>
+      </header>
       
       {/* Hero Section */}
       <section className="section-spacing py-20 md:py-32 relative z-10">
@@ -329,8 +346,16 @@ const Index = () => {
       {/* Footer */}
       <footer className="relative z-10 py-12 border-t border-border/30">
         <div className="container-custom text-center">
+          <a href="/" className="inline-block mb-6" aria-label="Rise Digital - Página inicial">
+            <img 
+              src={logoSvg} 
+              alt="Rise Digital" 
+              className="h-8 md:h-10 w-auto mx-auto transition-opacity hover:opacity-80"
+              loading="lazy"
+            />
+          </a>
           <p className="text-foreground/60">
-            © 2024 Sua Landing Page. Desenvolvido com tecnologia moderna.
+            © 2024 Rise Digital. Desenvolvido com tecnologia moderna.
           </p>
         </div>
       </footer>
