@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'dm-serif': ['DM Serif Display', 'serif'],
+        'bebas': ['Bebas Neue', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
       },
       colors: {
