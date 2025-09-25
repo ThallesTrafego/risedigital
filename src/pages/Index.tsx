@@ -8,21 +8,6 @@ const Index = () => {
     <div className="min-h-screen bg-background relative overflow-hidden">
       <AnimatedBackground />
       
-      {/* Header */}
-      <header className="relative z-10 py-4 border-b border-border/30">
-        <div className="container-custom">
-          <div className="flex items-center">
-            <a href="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/cfb5cf2f-072f-44b9-9e29-e4d783a2512a.png" 
-                alt="RISE Digital" 
-                className="h-8 md:h-12 w-auto object-contain"
-              />
-            </a>
-          </div>
-        </div>
-      </header>
-      
       {/* Hero Section */}
       <section className="section-spacing py-20 md:py-32 relative z-10">
         <div className="container-custom text-center">
@@ -344,15 +329,6 @@ const Index = () => {
       {/* Footer */}
       <footer className="relative z-10 py-12 border-t border-border/30">
         <div className="container-custom text-center">
-          <div className="flex justify-center mb-6">
-            <a href="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/cfb5cf2f-072f-44b9-9e29-e4d783a2512a.png" 
-                alt="RISE Digital" 
-                className="h-6 md:h-8 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
-              />
-            </a>
-          </div>
           <p className="text-foreground/60">
             © 2024 Sua Landing Page. Desenvolvido com tecnologia moderna.
           </p>
