@@ -2,14 +2,24 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { TrendingUp, Users, Award, Target, Globe, MessageCircle, Search, MapPin, Rocket, Star, Quote, Clock } from "lucide-react";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Index = () => {
+  const heroRef = useScrollReveal({ threshold: 0.2 });
+  const validationRef = useScrollReveal({ threshold: 0.1 });
+  const problemRef = useScrollReveal({ threshold: 0.1 });
+  const basesRef = useScrollReveal({ threshold: 0.1 });
+  const methodRef = useScrollReveal({ threshold: 0.1 });
+  const testimonialsRef = useScrollReveal({ threshold: 0.1 });
+  const limitedRef = useScrollReveal({ threshold: 0.1 });
+  const closingRef = useScrollReveal({ threshold: 0.1 });
+
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       <AnimatedBackground />
       
       {/* Hero Section */}
-      <section className="section-spacing py-20 md:py-32 relative z-10">
+      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-title mb-8 leading-tight max-w-5xl mx-auto font-inter">
             Enquanto seus concorrentes colecionam curtidas, nós construímos seu faturamento.
@@ -27,7 +37,7 @@ const Index = () => {
       </section>
 
       {/* Validation Section */}
-      <section className="section-spacing relative z-10">
+      <section ref={validationRef.elementRef} className={`section-spacing relative z-10 scroll-reveal ${validationRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="section-title">
@@ -38,8 +48,8 @@ const Index = () => {
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+              <div className={`flex flex-col items-center text-center scroll-reveal ${validationRef.isVisible ? 'visible scroll-reveal-stagger-1' : ''}`}>
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-4 icon-container">
                   <TrendingUp className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <p className="text-lg font-semibold text-foreground/90">
@@ -47,8 +57,8 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+              <div className={`flex flex-col items-center text-center scroll-reveal ${validationRef.isVisible ? 'visible scroll-reveal-stagger-2' : ''}`}>
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-4 icon-container">
                   <Users className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <p className="text-lg font-semibold text-foreground/90">
@@ -56,8 +66,8 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+              <div className={`flex flex-col items-center text-center scroll-reveal ${validationRef.isVisible ? 'visible scroll-reveal-stagger-3' : ''}`}>
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-4 icon-container">
                   <Award className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <p className="text-lg font-semibold text-foreground/90">
@@ -70,7 +80,7 @@ const Index = () => {
       </section>
 
       {/* Problem Section */}
-      <section className="section-spacing relative z-10">
+      <section ref={problemRef.elementRef} className={`section-spacing relative z-10 scroll-reveal ${problemRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="section-title">
@@ -84,7 +94,7 @@ const Index = () => {
       </section>
 
       {/* 3 Bases Section */}
-      <section className="section-spacing relative z-10">
+      <section ref={basesRef.elementRef} className={`section-spacing relative z-10 scroll-reveal ${basesRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="section-title">
@@ -95,8 +105,8 @@ const Index = () => {
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-left">
-                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6">
+              <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-left scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-1' : ''}`}>
+                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container">
                   <Target className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter">Sistema de Aquisição de Clientes</h3>
@@ -105,8 +115,8 @@ const Index = () => {
                 </p>
               </Card>
 
-              <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-left">
-                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6">
+              <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-left scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-2' : ''}`}>
+                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container">
                   <Globe className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter">Ativo Digital de Conversão</h3>
@@ -115,8 +125,8 @@ const Index = () => {
                 </p>
               </Card>
 
-              <Card className="p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-left">
-                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6">
+              <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-left scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-3' : ''}`}>
+                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container">
                   <MessageCircle className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter">Inteligência de Atendimento e Vendas</h3>
@@ -130,7 +140,7 @@ const Index = () => {
       </section>
 
       {/* Nosso Método Section */}
-      <section className="section-spacing relative z-10">
+      <section ref={methodRef.elementRef} className={`section-spacing relative z-10 scroll-reveal ${methodRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="section-title">
@@ -141,8 +151,8 @@ const Index = () => {
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+              <div className={`flex flex-col items-center text-center scroll-reveal ${methodRef.isVisible ? 'visible scroll-reveal-stagger-1' : ''}`}>
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 icon-container">
                   <Search className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter">Diagnóstico Estratégico</h3>
@@ -151,8 +161,8 @@ const Index = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+              <div className={`flex flex-col items-center text-center scroll-reveal ${methodRef.isVisible ? 'visible scroll-reveal-stagger-2' : ''}`}>
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 icon-container">
                   <MapPin className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter">Plano de Crescimento</h3>
@@ -161,8 +171,8 @@ const Index = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+              <div className={`flex flex-col items-center text-center scroll-reveal ${methodRef.isVisible ? 'visible scroll-reveal-stagger-3' : ''}`}>
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 icon-container">
                   <Rocket className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter">Execução e Escala</h3>
@@ -182,7 +192,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="section-spacing relative z-10">
+      <section ref={testimonialsRef.elementRef} className={`section-spacing relative z-10 scroll-reveal ${testimonialsRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="section-title">
@@ -278,7 +288,7 @@ const Index = () => {
       </section>
 
       {/* Limited Agenda Section */}
-      <section className="section-spacing relative z-10">
+      <section ref={limitedRef.elementRef} className={`section-spacing relative z-10 scroll-reveal ${limitedRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="section-title">
@@ -308,7 +318,7 @@ const Index = () => {
       </section>
 
       {/* Closing Section */}
-      <section className="section-spacing relative z-10">
+      <section ref={closingRef.elementRef} className={`section-spacing relative z-10 scroll-reveal ${closingRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom text-center">
           <div className="max-w-5xl mx-auto">
             <h2 className="section-title">
