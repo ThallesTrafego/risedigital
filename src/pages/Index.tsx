@@ -20,7 +20,7 @@ const Index = () => {
       <AnimatedBackground />
       
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/30">
+      <header className="fixed top-0 left-0 right-0 z-50">
         <div className="container-custom py-6">
           <a href="/" className="inline-block hover:scale-105 transition-transform duration-300">
             <img 
