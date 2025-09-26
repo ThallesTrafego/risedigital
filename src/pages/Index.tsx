@@ -21,19 +21,19 @@ const Index = () => {
       
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/30">
-        <div className="container-custom py-3">
+        <div className="container-custom py-4">
           <a href="/" className="inline-block hover:scale-105 transition-transform duration-300">
             <img 
               src={riseDigitalLogo} 
               alt="Rise Digital" 
-              className="h-8 md:h-10 w-auto"
+              className="h-10 md:h-12 w-auto"
             />
           </a>
         </div>
       </header>
       
       {/* Hero Section */}
-      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-32 md:pt-40 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
+      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-36 md:pt-44 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-title mb-8 leading-tight max-w-5xl mx-auto font-inter">
             Enquanto seus concorrentes colecionam curtidas, nós construímos seu faturamento.
@@ -357,7 +357,7 @@ const Index = () => {
             <img 
               src={riseDigitalLogo} 
               alt="Rise Digital" 
-              className="h-6 md:h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
+              className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
             />
           </a>
           <p className="text-foreground/60">
