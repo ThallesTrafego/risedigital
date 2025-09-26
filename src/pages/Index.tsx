@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { TrendingUp, Users, Award, Target, Globe, MessageCircle, Search, MapPin, Rocket, Star, Quote, Clock } from "lucide-react";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import riseDigitalLogo from "@/assets/rise-digital-logo.png";
 
 const Index = () => {
   const heroRef = useScrollReveal({ threshold: 0.2 });
@@ -18,8 +19,21 @@ const Index = () => {
     <div className="min-h-screen bg-background relative overflow-hidden">
       <AnimatedBackground />
       
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/30">
+        <div className="container-custom py-3">
+          <a href="/" className="inline-block hover:scale-105 transition-transform duration-300">
+            <img 
+              src={riseDigitalLogo} 
+              alt="Rise Digital" 
+              className="h-8 md:h-10 w-auto"
+            />
+          </a>
+        </div>
+      </header>
+      
       {/* Hero Section */}
-      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
+      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-32 md:pt-40 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-title mb-8 leading-tight max-w-5xl mx-auto font-inter">
             Enquanto seus concorrentes colecionam curtidas, nós construímos seu faturamento.
@@ -339,6 +353,13 @@ const Index = () => {
       {/* Footer */}
       <footer className="relative z-10 py-12 border-t border-border/30">
         <div className="container-custom text-center">
+          <a href="/" className="inline-block mb-4 hover:scale-105 transition-transform duration-300">
+            <img 
+              src={riseDigitalLogo} 
+              alt="Rise Digital" 
+              className="h-6 md:h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
+            />
+          </a>
           <p className="text-foreground/60">
             © 2024 Sua Landing Page. Desenvolvido com tecnologia moderna.
           </p>
