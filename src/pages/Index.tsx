@@ -172,9 +172,10 @@ direção: o crescimento.</p>
                   <Target className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter text-center">Sistema de Aquisição de Clientes</h3>
-                <p className="text-foreground/70 leading-relaxed text-center">
-                  Campanhas de tráfego pago no Google & Meta Ads para atrair clientes com alto potencial de compra.
-                </p>
+                <p className="text-foreground/70 leading-relaxed text-center">Utilizamos campanhas de tráfego pago (Google &amp; Meta Ads) com
+inteligência de dados para colocar sua marca na frente de clientes
+prontos para comprar, transformando investimento em oportunidades
+reais de negócio.</p>
               </Card>
 
               <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-center scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-2' : ''}`}>
@@ -182,9 +183,9 @@ direção: o crescimento.</p>
                   <Globe strokeWidth={1.5} className="w-8 h-8 text-primary mx-0" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter text-center">Ativo Digital de Conversão</h3>
-                <p className="text-foreground/70 leading-relaxed text-center">
-                  Landing pages e sites institucionais de alta performance focados em conversão.
-                </p>
+                <p className="text-foreground/70 leading-relaxed text-center">Criamos a experiência digital que seu cliente precisa para tomar a
+decisão de compra: landing pages e sites institucionais de alta
+performance que guiam o visitante diretamente para a ação.</p>
               </Card>
 
               <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-center scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-3' : ''}`}>
@@ -192,9 +193,10 @@ direção: o crescimento.</p>
                   <MessageCircle className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter text-center">Inteligência de Atendimento e Vendas</h3>
-                <p className="text-foreground/70 leading-relaxed text-center">
-                  Automação / inteligência no WhatsApp com atendimento 24/7 para qualificar leads e não deixar oportunidades escaparem.
-                </p>
+                <p className="text-foreground/70 leading-relaxed text-center">Implementamos um sistema de atendimento inteligente que opera
+24/7 nos seus principais canais de atendimento, atuando para
+recepcionar, qualificar, agendar reuniões e até vender, garantindo que
+nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
               </Card>
             </div>
           </div>
