@@ -281,63 +281,6 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Feedback Section */}
-            <div className="mb-12">
-              <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-8 font-inter">O que nossos clientes dizem</h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 text-left relative">
-                  <Quote className="w-8 h-8 text-primary/30 absolute top-4 right-4" />
-                  <div className="flex items-center mb-4">
-                    <div className="flex text-yellow-400">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current" />
-                      ))}
-                    </div>
-                  </div>
-                  <p className="text-foreground/80 mb-4 italic">
-                    "Aumentamos nosso faturamento em 300% em 6 meses. O método da Rise realmente funciona!"
-                  </p>
-                  <div className="text-sm text-foreground/60">
-                    <strong>Maria Silva</strong> - CEO, Empresa ABC
-                  </div>
-                </Card>
-
-                <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 text-left relative">
-                  <Quote className="w-8 h-8 text-primary/30 absolute top-4 right-4" />
-                  <div className="flex items-center mb-4">
-                    <div className="flex text-yellow-400">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current" />
-                      ))}
-                    </div>
-                  </div>
-                  <p className="text-foreground/80 mb-4 italic">
-                    "Finalmente encontramos uma agência que entende de negócio, não só de marketing."
-                  </p>
-                  <div className="text-sm text-foreground/60">
-                    <strong>João Santos</strong> - Diretor, Tech Solutions
-                  </div>
-                </Card>
-
-                <Card className="p-6 bg-card/50 backdrop-blur-sm border-border/50 text-left relative">
-                  <Quote className="w-8 h-8 text-primary/30 absolute top-4 right-4" />
-                  <div className="flex items-center mb-4">
-                    <div className="flex text-yellow-400">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current" />
-                      ))}
-                    </div>
-                  </div>
-                  <p className="text-foreground/80 mb-4 italic">
-                    "Triplicamos nossos leads qualificados e o ROI superou todas as expectativas."
-                  </p>
-                  <div className="text-sm text-foreground/60">
-                    <strong>Ana Costa</strong> - Fundadora, StartupXYZ
-                  </div>
-                </Card>
-              </div>
-            </div>
-
             <div className="flex justify-center">
               <Button variant="hero" size="lg">
                 Quero ter resultados assim com a Rise
