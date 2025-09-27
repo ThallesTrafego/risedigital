@@ -77,15 +77,15 @@ const Index = () => {
       
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50">
-        <div className="container-custom py-4">
+        <div className="container-custom py-3 md:py-4">
           <a href="/" className="inline-block hover:scale-105 transition-transform duration-300">
-            <img src={novaLogoDigital} alt="Nova Logo Digital" className="h-32 md:h-40 w-auto" />
+            <img src={novaLogoDigital} alt="Nova Logo Digital" className="h-24 md:h-40 w-auto" />
           </a>
         </div>
       </header>
       
       {/* Hero Section */}
-      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-60 md:pt-64 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
+      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-48 md:pt-64 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-title mb-8 leading-tight max-w-5xl mx-auto font-inter">
             Enquanto seus concorrentes colecionam curtidas, nós construímos seu faturamento.
