@@ -115,9 +115,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-4 icon-container">
                   <TrendingUp className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
-                <p className="text-lg font-semibold text-foreground/90">
-                  +R$3,5 milhões gerenciados em anúncios
-                </p>
+                <p className="text-lg font-semibold text-foreground/90">+R$4 milhões gerenciados em anúncios</p>
               </div>
               
               <div className={`flex flex-col items-center text-center scroll-reveal ${validationRef.isVisible ? 'visible scroll-reveal-stagger-2' : ''}`}>
