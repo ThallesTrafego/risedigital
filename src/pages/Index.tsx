@@ -4,11 +4,7 @@ import { TrendingUp, Users, Award, Target, Globe, MessageCircle, Search, MapPin,
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import novaLogoDigital from "@/assets/nova-logo-digital.png";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 // Import client logos
@@ -21,43 +17,69 @@ import globalLogo from '@/assets/clients/global-logo.png';
 import integraspLogo from '@/assets/clients/integrasp-logo.png';
 import jazztechLogo from '@/assets/clients/jazztech-logo.png';
 import zampLogo from '@/assets/clients/zamp-logo.png';
-
 const Index = () => {
-  const heroRef = useScrollReveal({ threshold: 0.2 });
-  const validationRef = useScrollReveal({ threshold: 0.1 });
-  const problemRef = useScrollReveal({ threshold: 0.1 });
-  const basesRef = useScrollReveal({ threshold: 0.1 });
-  const methodRef = useScrollReveal({ threshold: 0.1 });
-  const testimonialsRef = useScrollReveal({ threshold: 0.1 });
-  const limitedRef = useScrollReveal({ threshold: 0.1 });
-  const closingRef = useScrollReveal({ threshold: 0.1 });
+  const heroRef = useScrollReveal({
+    threshold: 0.2
+  });
+  const validationRef = useScrollReveal({
+    threshold: 0.1
+  });
+  const problemRef = useScrollReveal({
+    threshold: 0.1
+  });
+  const basesRef = useScrollReveal({
+    threshold: 0.1
+  });
+  const methodRef = useScrollReveal({
+    threshold: 0.1
+  });
+  const testimonialsRef = useScrollReveal({
+    threshold: 0.1
+  });
+  const limitedRef = useScrollReveal({
+    threshold: 0.1
+  });
+  const closingRef = useScrollReveal({
+    threshold: 0.1
+  });
 
   // Client logos data
-  const clientLogos = [
-    { src: fidLogo, alt: "FID" },
-    { src: berleseLogo, alt: "Berlese" },
-    { src: borsoiLogo, alt: "Borsoi" },
-    { src: cacauShowLogo, alt: "Cacau Show" },
-    { src: drogaRaiaLogo, alt: "Droga Raia" },
-    { src: globalLogo, alt: "Global" },
-    { src: integraspLogo, alt: "Integra SP" },
-    { src: jazztechLogo, alt: "JazzTech" },
-    { src: zampLogo, alt: "Zamp" },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
+  const clientLogos = [{
+    src: fidLogo,
+    alt: "FID"
+  }, {
+    src: berleseLogo,
+    alt: "Berlese"
+  }, {
+    src: borsoiLogo,
+    alt: "Borsoi"
+  }, {
+    src: cacauShowLogo,
+    alt: "Cacau Show"
+  }, {
+    src: drogaRaiaLogo,
+    alt: "Droga Raia"
+  }, {
+    src: globalLogo,
+    alt: "Global"
+  }, {
+    src: integraspLogo,
+    alt: "Integra SP"
+  }, {
+    src: jazztechLogo,
+    alt: "JazzTech"
+  }, {
+    src: zampLogo,
+    alt: "Zamp"
+  }];
+  return <div className="min-h-screen bg-background relative overflow-hidden">
       <AnimatedBackground />
       
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50">
         <div className="container-custom py-6">
           <a href="/" className="inline-block hover:scale-105 transition-transform duration-300">
-            <img 
-              src={novaLogoDigital} 
-              alt="Nova Logo Digital" 
-              className="h-40 md:h-48 w-auto"
-            />
+            <img src={novaLogoDigital} alt="Nova Logo Digital" className="h-40 md:h-48 w-auto" />
           </a>
         </div>
       </header>
@@ -248,34 +270,22 @@ const Index = () => {
             
             {/* Logo Section */}
             <div className="mb-16">
-              <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-8 font-inter">Empresas que confiam na Rise</h3>
+              <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-8 font-inter">Empresas que já confiaram na Rise</h3>
               <div className="max-w-4xl mx-auto">
-                <Carousel
-                  plugins={[
-                    Autoplay({
-                      delay: 3000,
-                      stopOnInteraction: false,
-                      stopOnMouseEnter: false,
-                    }),
-                  ]}
-                  opts={{
-                    align: "start",
-                    loop: true,
-                  }}
-                  className="w-full"
-                >
+                <Carousel plugins={[Autoplay({
+                delay: 3000,
+                stopOnInteraction: false,
+                stopOnMouseEnter: false
+              })]} opts={{
+                align: "start",
+                loop: true
+              }} className="w-full">
                   <CarouselContent className="-ml-2 md:-ml-4">
-                    {clientLogos.map((logo, index) => (
-                      <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                    {clientLogos.map((logo, index) => <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
                         <div className="flex items-center justify-center h-20 md:h-24 bg-card/30 rounded-lg border border-border/30 backdrop-blur-sm hover:bg-card/50 transition-all duration-300 group">
-                          <img
-                            src={logo.src}
-                            alt={logo.alt}
-                            className="h-12 md:h-16 w-auto object-contain opacity-60 group-hover:opacity-90 transition-opacity duration-300 filter grayscale group-hover:grayscale-0"
-                          />
+                          <img src={logo.src} alt={logo.alt} className="h-12 md:h-16 w-auto object-contain opacity-60 group-hover:opacity-90 transition-opacity duration-300 filter grayscale group-hover:grayscale-0" />
                         </div>
-                      </CarouselItem>
-                    ))}
+                      </CarouselItem>)}
                   </CarouselContent>
                 </Carousel>
               </div>
@@ -343,19 +353,13 @@ const Index = () => {
       <footer className="relative z-10 py-12 border-t border-border/30">
         <div className="container-custom text-center">
           <a href="/" className="inline-block mb-4 hover:scale-105 transition-transform duration-300">
-            <img 
-              src={novaLogoDigital} 
-              alt="Nova Logo Digital" 
-              className="h-32 md:h-40 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
-            />
+            <img src={novaLogoDigital} alt="Nova Logo Digital" className="h-32 md:h-40 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
           </a>
           <p className="text-foreground/60">
             © 2024 Sua Landing Page. Desenvolvido com tecnologia moderna.
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
