@@ -90,10 +90,7 @@ const Index = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-title mb-8 leading-tight max-w-5xl mx-auto font-inter">
             Enquanto seus concorrentes colecionam curtidas, nós construímos seu faturamento.
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-foreground/90 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Com +R$3,5 milhões investidos em anúncios, +70.000 leads gerados e certificações oficiais, 
-            ajudamos empresas a transformar marketing em crescimento real e previsível.
-          </p>
+          <p className="text-lg md:text-xl lg:text-2xl text-foreground/90 mb-12 max-w-4xl mx-auto leading-relaxed">Com milhões investidos em anúncios, milhares de leads gerados, experiência direta com empresários e certificações oficiais, ajudamos empresas a transformar marketing em crescimento real e previsível.</p>
           <div className="flex justify-center">
             <Button variant="hero" size="lg">
               Quero Crescer com a Rise
