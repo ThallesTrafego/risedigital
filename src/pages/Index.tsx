@@ -271,8 +271,8 @@ const Index = () => {
               }} className="w-full">
                   <CarouselContent className="-ml-2 md:-ml-4">
                     {clientLogos.map((logo, index) => <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                        <div className="flex items-center justify-center h-20 md:h-24 bg-card/30 rounded-lg border border-border/30 backdrop-blur-sm hover:bg-card/50 transition-all duration-300 group">
-                          <img src={logo.src} alt={logo.alt} className="h-12 md:h-16 w-auto object-contain opacity-60 group-hover:opacity-90 transition-opacity duration-300 filter grayscale group-hover:grayscale-0" />
+                        <div className="flex items-center justify-center h-20 md:h-24 bg-white rounded-lg border border-gray-200 p-4 hover:bg-white hover:shadow-md transition-all duration-300 group">
+                          <img src={logo.src} alt={logo.alt} className="h-12 md:h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0" />
                         </div>
                       </CarouselItem>)}
                   </CarouselContent>
