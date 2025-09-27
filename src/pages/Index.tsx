@@ -161,9 +161,10 @@ const Index = () => {
             <h2 className="section-title">
               As 3 Bases do Crescimento Digital
             </h2>
-            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-16 max-w-4xl mx-auto">
-              Para construir esses resultados sólidos e duradouros, nossa atuação se baseia em três bases estratégicas e complementares.
-            </p>
+            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-16 max-w-4xl mx-auto">Nós acreditamos que resultados duradouros são fruto de um processo
+claro. Por isso, nossa metodologia é fundamentada em três bases
+estratégicas que se conectam para mover seu negócio em uma única
+direção: o crescimento.</p>
             
             <div className="grid md:grid-cols-3 gap-8">
               <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-center scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-1' : ''}`}>
