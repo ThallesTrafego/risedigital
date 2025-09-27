@@ -244,9 +244,7 @@ const Index = () => {
             </div>
 
             <div className="flex justify-center">
-              <Button variant="hero" size="lg">
-                Quero um plano de crescimento para minha empresa
-              </Button>
+              <Button variant="hero" size="lg">Quero um plano de crescimento</Button>
             </div>
           </div>
         </div>
@@ -256,12 +254,8 @@ const Index = () => {
       <section ref={testimonialsRef.elementRef} className={`section-spacing relative z-10 scroll-reveal ${testimonialsRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="section-title">
-              Nossos clientes falam por nós
-            </h2>
-            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-16 max-w-4xl mx-auto">
-              De negócios locais a softwares, já ajudamos empresas a gerar oportunidades e crescer de forma consistente. Confira alguns feedbacks e marcas que confiaram na Rise.
-            </p>
+            <h2 className="section-title">Nossos clientes já sabem o caminho</h2>
+            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-16 max-w-4xl mx-auto">De negócios locais a softwares, já ajudamos empresas a gerar oportunidades e crescer de forma consistente. Tudo isso, com base no método que você acabou de ver acima.</p>
             
             {/* Logo Section */}
             <div className="mb-16">
@@ -336,9 +330,7 @@ const Index = () => {
               Mais do que marketing genérico, entregamos uma rota clara para aumentar o faturamento da sua empresa com consistência e transparência. Não se trata apenas de anúncios, mas de construir previsibilidade e crescimento sustentável para o seu negócio.
             </p>
             <div className="flex justify-center">
-              <Button variant="hero" size="lg">
-                Clique aqui e fale com nosso time no WhatsApp
-              </Button>
+              <Button variant="hero" size="lg">Clique aqui e fale com nosso time</Button>
             </div>
           </div>
         </div>
@@ -350,9 +342,7 @@ const Index = () => {
           <a href="/" className="inline-block mb-4 hover:scale-105 transition-transform duration-300">
             <img src={novaLogoDigital} alt="Nova Logo Digital" className="h-32 md:h-40 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
           </a>
-          <p className="text-foreground/60">
-            © 2024 Sua Landing Page. Desenvolvido com tecnologia moderna.
-          </p>
+          <p className="text-foreground/60">© 2025 Rise Digital. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>;
