@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { TrendingUp, Users, Award, Target, Globe, MessageCircle, Search, MapPin, Rocket, Star, Quote, Clock } from "lucide-react";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import riseDigitalLogo from "@/assets/rise-digital-logo.png";
+import novaLogoDigital from "@/assets/nova-logo-digital.png";
 
 const Index = () => {
   const heroRef = useScrollReveal({ threshold: 0.2 });
@@ -24,8 +24,8 @@ const Index = () => {
         <div className="container-custom py-6">
           <a href="/" className="inline-block hover:scale-105 transition-transform duration-300">
             <img 
-              src={riseDigitalLogo} 
-              alt="Rise Digital" 
+              src={novaLogoDigital} 
+              alt="Nova Logo Digital" 
               className="h-20 md:h-24 w-auto"
             />
           </a>
@@ -33,7 +33,7 @@ const Index = () => {
       </header>
       
       {/* Hero Section */}
-      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-44 md:pt-52 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
+      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-48 md:pt-56 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-title mb-8 leading-tight max-w-5xl mx-auto font-inter">
             Enquanto seus concorrentes colecionam curtidas, nós construímos seu faturamento.
@@ -355,8 +355,8 @@ const Index = () => {
         <div className="container-custom text-center">
           <a href="/" className="inline-block mb-4 hover:scale-105 transition-transform duration-300">
             <img 
-              src={riseDigitalLogo} 
-              alt="Rise Digital" 
+              src={novaLogoDigital} 
+              alt="Nova Logo Digital" 
               className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
             />
           </a>
