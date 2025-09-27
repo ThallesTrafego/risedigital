@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { TrendingUp, Users, Award, Target, Globe, MessageCircle, Search, MapPin, Rocket, Star, Quote, Clock } from "lucide-react";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import novaLogoDigital from "@/assets/nova-logo-digital.png";
+import riseDigitalLogo from "@/assets/rise-digital-logo-new.png";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -76,16 +76,16 @@ const Index = () => {
       <AnimatedBackground />
       
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50">
-        <div className="container-custom py-3 md:py-4">
+      <header className="relative">
+        <div className="container-custom py-6 md:py-8">
           <a href="/" className="inline-block hover:scale-105 transition-transform duration-300">
-            <img src={novaLogoDigital} alt="Nova Logo Digital" className="h-24 md:h-40 w-auto" />
+            <img src={riseDigitalLogo} alt="Rise Digital" className="h-42 md:h-58 w-auto" />
           </a>
         </div>
       </header>
       
       {/* Hero Section */}
-      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-48 md:pt-64 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
+      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-8 md:pt-12 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-title mb-8 leading-tight max-w-5xl mx-auto font-inter">
             Enquanto seus concorrentes colecionam curtidas, nós construímos seu faturamento.
@@ -340,7 +340,7 @@ const Index = () => {
       <footer className="relative z-10 py-12 border-t border-border/30">
         <div className="container-custom text-center">
           <a href="/" className="inline-block mb-4 hover:scale-105 transition-transform duration-300">
-            <img src={novaLogoDigital} alt="Nova Logo Digital" className="h-32 md:h-40 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+            <img src={riseDigitalLogo} alt="Rise Digital" className="h-32 md:h-40 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
           </a>
           <p className="text-foreground/60">© 2025 Rise Digital. Todos os direitos reservados.</p>
         </div>
