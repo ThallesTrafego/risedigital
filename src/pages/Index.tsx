@@ -4,6 +4,23 @@ import { TrendingUp, Users, Award, Target, Globe, MessageCircle, Search, MapPin,
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import novaLogoDigital from "@/assets/nova-logo-digital.png";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
+// Import client logos
+import fidLogo from '@/assets/clients/fid-logo.png';
+import berleseLogo from '@/assets/clients/berlese-logo.png';
+import borsoiLogo from '@/assets/clients/borsoi-logo.png';
+import cacauShowLogo from '@/assets/clients/cacau-show-logo.png';
+import drogaRaiaLogo from '@/assets/clients/droga-raia-logo.png';
+import globalLogo from '@/assets/clients/global-logo.png';
+import integraspLogo from '@/assets/clients/integrasp-logo.png';
+import jazztechLogo from '@/assets/clients/jazztech-logo.png';
+import zampLogo from '@/assets/clients/zamp-logo.png';
 
 const Index = () => {
   const heroRef = useScrollReveal({ threshold: 0.2 });
@@ -14,6 +31,19 @@ const Index = () => {
   const testimonialsRef = useScrollReveal({ threshold: 0.1 });
   const limitedRef = useScrollReveal({ threshold: 0.1 });
   const closingRef = useScrollReveal({ threshold: 0.1 });
+
+  // Client logos data
+  const clientLogos = [
+    { src: fidLogo, alt: "FID" },
+    { src: berleseLogo, alt: "Berlese" },
+    { src: borsoiLogo, alt: "Borsoi" },
+    { src: cacauShowLogo, alt: "Cacau Show" },
+    { src: drogaRaiaLogo, alt: "Droga Raia" },
+    { src: globalLogo, alt: "Global" },
+    { src: integraspLogo, alt: "Integra SP" },
+    { src: jazztechLogo, alt: "JazzTech" },
+    { src: zampLogo, alt: "Zamp" },
+  ];
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
@@ -219,19 +249,35 @@ const Index = () => {
             {/* Logo Section */}
             <div className="mb-16">
               <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-8 font-inter">Empresas que confiam na Rise</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-70">
-                <div className="h-16 bg-card/30 rounded-lg flex items-center justify-center border border-border/30">
-                  <span className="text-foreground/60 font-semibold">Logo Cliente 1</span>
-                </div>
-                <div className="h-16 bg-card/30 rounded-lg flex items-center justify-center border border-border/30">
-                  <span className="text-foreground/60 font-semibold">Logo Cliente 2</span>
-                </div>
-                <div className="h-16 bg-card/30 rounded-lg flex items-center justify-center border border-border/30">
-                  <span className="text-foreground/60 font-semibold">Logo Cliente 3</span>
-                </div>
-                <div className="h-16 bg-card/30 rounded-lg flex items-center justify-center border border-border/30">
-                  <span className="text-foreground/60 font-semibold">Logo Cliente 4</span>
-                </div>
+              <div className="max-w-4xl mx-auto">
+                <Carousel
+                  plugins={[
+                    Autoplay({
+                      delay: 3000,
+                      stopOnInteraction: true,
+                      stopOnMouseEnter: true,
+                    }),
+                  ]}
+                  opts={{
+                    align: "start",
+                    loop: true,
+                  }}
+                  className="w-full"
+                >
+                  <CarouselContent className="-ml-2 md:-ml-4">
+                    {clientLogos.map((logo, index) => (
+                      <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                        <div className="flex items-center justify-center h-20 md:h-24 bg-card/30 rounded-lg border border-border/30 backdrop-blur-sm hover:bg-card/50 transition-all duration-300 group">
+                          <img
+                            src={logo.src}
+                            alt={logo.alt}
+                            className="h-12 md:h-16 w-auto object-contain opacity-60 group-hover:opacity-90 transition-opacity duration-300 filter grayscale group-hover:grayscale-0"
+                          />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                </Carousel>
               </div>
             </div>
 
