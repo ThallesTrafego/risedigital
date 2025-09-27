@@ -26,14 +26,14 @@ const Index = () => {
             <img 
               src={novaLogoDigital} 
               alt="Nova Logo Digital" 
-              className="h-20 md:h-24 w-auto"
+              className="h-40 md:h-48 w-auto"
             />
           </a>
         </div>
       </header>
       
       {/* Hero Section */}
-      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-48 md:pt-56 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
+      <section ref={heroRef.elementRef} className={`section-spacing py-20 md:py-32 pt-72 md:pt-80 relative z-10 scroll-reveal ${heroRef.isVisible ? 'visible' : ''}`}>
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-title mb-8 leading-tight max-w-5xl mx-auto font-inter">
             Enquanto seus concorrentes colecionam curtidas, nós construímos seu faturamento.
@@ -357,7 +357,7 @@ const Index = () => {
             <img 
               src={novaLogoDigital} 
               alt="Nova Logo Digital" 
-              className="h-16 md:h-20 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
+              className="h-32 md:h-40 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
             />
           </a>
           <p className="text-foreground/60">
