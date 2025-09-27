@@ -171,32 +171,32 @@ const Index = () => {
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-left scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-1' : ''}`}>
+              <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-center scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-1' : ''}`}>
                 <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-[100px]">
                   <Target className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter text-center">Sistema de Aquisição de Clientes</h3>
-                <p className="text-foreground/70 leading-relaxed">
+                <p className="text-foreground/70 leading-relaxed text-center">
                   Campanhas de tráfego pago no Google & Meta Ads para atrair clientes com alto potencial de compra.
                 </p>
               </Card>
 
-              <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-left scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-2' : ''}`}>
+              <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-center scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-2' : ''}`}>
                 <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-[100px]">
                   <Globe strokeWidth={1.5} className="w-8 h-8 text-primary mx-0" />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter">Ativo Digital de Conversão</h3>
-                <p className="text-foreground/70 leading-relaxed">
+                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter text-center">Ativo Digital de Conversão</h3>
+                <p className="text-foreground/70 leading-relaxed text-center">
                   Landing pages e sites institucionais de alta performance focados em conversão.
                 </p>
               </Card>
 
-              <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-left scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-3' : ''}`}>
+              <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-center scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-3' : ''}`}>
                 <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-[100px]">
                   <MessageCircle className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter">Inteligência de Atendimento e Vendas</h3>
-                <p className="text-foreground/70 leading-relaxed">
+                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter text-center">Inteligência de Atendimento e Vendas</h3>
+                <p className="text-foreground/70 leading-relaxed text-center">
                   Automação / inteligência no WhatsApp com atendimento 24/7 para qualificar leads e não deixar oportunidades escaparem.
                 </p>
               </Card>
