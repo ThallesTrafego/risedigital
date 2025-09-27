@@ -192,7 +192,7 @@ const Index = () => {
               </Card>
 
               <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-left scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-3' : ''}`}>
-                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container">
+                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-[100px]">
                   <MessageCircle className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter">Inteligência de Atendimento e Vendas</h3>
