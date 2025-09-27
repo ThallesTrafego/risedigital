@@ -175,7 +175,7 @@ const Index = () => {
                 <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-[100px]">
                   <Target className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter">Sistema de Aquisição de Clientes</h3>
+                <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter text-center">Sistema de Aquisição de Clientes</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   Campanhas de tráfego pago no Google & Meta Ads para atrair clientes com alto potencial de compra.
                 </p>
