@@ -79,7 +79,7 @@ const Index = () => {
       <header className="relative">
         <div className="container-custom md:py-8 my-0 mx-0 px-0 py-0">
           <a href="/" className="inline-block hover:scale-105 transition-transform duration-300">
-            <img src={riseDigitalLogo} alt="Rise Digital" className="h-28 md:h-80 w-auto" />
+            <img src={riseDigitalLogo} alt="Rise Digital" className="h-28 md:h-8 w-auto" />
           </a>
         </div>
       </header>
