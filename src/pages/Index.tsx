@@ -343,7 +343,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
       <footer className="relative z-10 py-12 border-t border-border/30">
         <div className="container-custom text-center">
           <a href="/" className="inline-block mb-4 hover:scale-105 transition-transform duration-300">
-            <img src={riseDigitalLogo} alt="Rise Digital" className="h-28 md:h-80 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+            <img src={riseDigitalLogo} alt="Rise Digital" className="h-28 md:h-32 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
           </a>
           <p className="text-foreground/60">© 2025 Rise Digital. Todos os direitos reservados.</p>
         </div>
