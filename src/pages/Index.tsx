@@ -168,7 +168,7 @@ direção: o crescimento.</p>
             
             <div className="grid md:grid-cols-3 gap-8">
               <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-center scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-1' : ''}`}>
-                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-[80px]">
+              <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-auto">
                   <Target className="w-8 h-8 text-primary" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter text-center">Sistema de Aquisição de Clientes</h3>
@@ -179,7 +179,7 @@ reais de negócio.</p>
               </Card>
 
               <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-center scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-2' : ''}`}>
-                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-[80px]">
+              <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-auto">
                   <Globe strokeWidth={1.5} className="w-8 h-8 text-primary mx-0" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter text-center">Ativo Digital de Conversão</h3>
@@ -189,7 +189,7 @@ performance que guiam o visitante diretamente para a ação.</p>
               </Card>
 
               <Card className={`p-8 bg-card/50 backdrop-blur-sm border-border/50 hover:bg-card/70 transition-all duration-300 text-center scroll-reveal ${basesRef.isVisible ? 'visible scroll-reveal-stagger-3' : ''}`}>
-                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-[80px]">
+                <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center mb-6 icon-container mx-auto">
                   <MessageCircle strokeWidth={1.5} className="w-8 h-8 text-primary mx-0" />
                 </div>
                 <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-4 font-inter text-center">Inteligência de Atendimento e Vendas</h3>
