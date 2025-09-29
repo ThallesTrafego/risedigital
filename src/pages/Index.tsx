@@ -92,9 +92,15 @@ const Index = () => {
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-foreground/90 mb-12 max-w-4xl mx-auto leading-relaxed">Com milhões investidos em anúncios, milhares de leads gerados, experiência direta com empresários e certificações oficiais, ajudamos empresas a transformar marketing em crescimento real e previsível.</p>
           <div className="flex justify-center">
-            <Button variant="hero" size="lg">
-              Quero Crescer com a Rise
-            </Button>
+            <a 
+              href="https://wa.me/5555999536040" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button variant="hero" size="lg">
+                Quero Crescer com a Rise
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -247,7 +253,13 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
             </div>
 
             <div className="flex justify-center">
-              <Button variant="hero" size="lg">Quero um plano de crescimento</Button>
+              <a 
+                href="https://wa.me/5555999536040" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button variant="hero" size="lg">Quero um plano de crescimento</Button>
+              </a>
             </div>
           </div>
         </div>
@@ -284,9 +296,15 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
             </div>
 
             <div className="flex justify-center">
-              <Button variant="hero" size="lg">
-                Quero ter resultados assim com a Rise
-              </Button>
+              <a 
+                href="https://wa.me/5555999536040" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button variant="hero" size="lg">
+                  Quero ter resultados assim com a Rise
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -314,9 +332,15 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
             </div>
 
             <div className="flex justify-center">
-              <Button variant="hero" size="lg" className="animate-pulse">
-                Quero meu projeto com a Rise
-              </Button>
+              <a 
+                href="https://wa.me/5555999536040" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button variant="hero" size="lg" className="animate-pulse">
+                  Quero meu projeto com a Rise
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -333,7 +357,13 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
               Mais do que marketing genérico, entregamos uma rota clara para aumentar o faturamento da sua empresa com consistência e transparência. Não se trata apenas de anúncios, mas de construir previsibilidade e crescimento sustentável para o seu negócio.
             </p>
             <div className="flex justify-center">
-              <Button variant="hero" size="lg">Clique aqui e fale com nosso time</Button>
+              <a 
+                href="https://wa.me/5555999536040" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button variant="hero" size="lg">Clique aqui e fale com nosso time</Button>
+              </a>
             </div>
           </div>
         </div>
