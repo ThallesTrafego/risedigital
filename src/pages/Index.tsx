@@ -350,7 +350,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
           {/* Social Links */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
             <a 
-              href="https://www.instagram.com/risedigital.br" 
+              href="https://www.instagram.com/risedigital.br?igsh=MXFlNWpza2xwcG5ycA==" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors duration-300 hover:scale-105"
