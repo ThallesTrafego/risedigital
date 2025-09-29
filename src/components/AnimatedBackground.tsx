@@ -1,5 +1,5 @@
 const AnimatedBackground = () => {
-  const spheres = Array.from({ length: 8 }, (_, i) => ({
+  const spheres = Array.from({ length: 4 }, (_, i) => ({
     id: i,
     size: Math.random() * 200 + 100,
     left: Math.random() * 100,

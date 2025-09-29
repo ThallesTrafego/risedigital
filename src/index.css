@@ -202,14 +202,15 @@
     opacity: 0;
   }
 
-  /* Animated Background Spheres */
+  /* Animated Background Spheres - Optimized */
   .floating-sphere {
     position: absolute;
     border-radius: 50%;
-    background: radial-gradient(circle, hsl(var(--primary-light) / 0.3), hsl(var(--primary) / 0.1));
-    filter: blur(20px);
+    background: radial-gradient(circle, hsl(var(--primary-light) / 0.2), hsl(var(--primary) / 0.05));
+    filter: blur(15px);
     pointer-events: none;
-    animation: float 6s ease-in-out infinite;
+    animation: float 8s ease-in-out infinite;
+    will-change: transform;
   }
 
   .floating-sphere:nth-child(odd) {
@@ -222,10 +223,10 @@
       transform: translateY(0px) translateX(0px) scale(1);
     }
     33% {
-      transform: translateY(-20px) translateX(10px) scale(1.1);
+      transform: translateY(-15px) translateX(8px) scale(1.05);
     }
     66% {
-      transform: translateY(10px) translateX(-10px) scale(0.9);
+      transform: translateY(8px) translateX(-8px) scale(0.95);
     }
   }
 

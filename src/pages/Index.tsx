@@ -4,7 +4,7 @@ import { TrendingUp, Users, Award, Target, Globe, MessageCircle, Search, MapPin,
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import riseDigitalLogo from "@/assets/rise-digital-logo-new.png";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { LazyCarousel, LazyCarouselContent, LazyCarouselItem } from "@/components/LazyCarousel";
 import Autoplay from "embla-carousel-autoplay";
 
 // Import client logos
@@ -79,7 +79,14 @@ const Index = () => {
       <header className="relative">
         <div className="container-custom md:py-8 my-0 px-0 py-[26px] mx-[50px] text-center">
           <a href="/" className="inline-block hover:scale-105 transition-transform duration-300">
-            <img src={riseDigitalLogo} alt="Rise Digital" className="h-28 md:h-32 w-auto" />
+            <img 
+              src={riseDigitalLogo} 
+              alt="Rise Digital - Agência de Marketing Digital" 
+              className="h-28 md:h-32 w-auto"
+              width="256"
+              height="128"
+              loading="eager"
+            />
           </a>
         </div>
       </header>
@@ -276,7 +283,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
             <div className="mb-16">
               <h3 className="text-xl md:text-2xl font-semibold gradient-title mb-8 font-inter">Empresas que já confiaram na Rise</h3>
               <div className="max-w-4xl mx-auto">
-                <Carousel plugins={[Autoplay({
+                <LazyCarousel plugins={[Autoplay({
                 delay: 3000,
                 stopOnInteraction: false,
                 stopOnMouseEnter: false
@@ -284,14 +291,21 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
                 align: "start",
                 loop: true
               }} className="w-full">
-                  <CarouselContent className="-ml-2 md:-ml-4">
-                    {clientLogos.map((logo, index) => <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                        <div className="flex items-center justify-center h-20 md:h-24 bg-white rounded-lg border border-gray-200 p-4 hover:bg-white hover:shadow-md transition-all duration-300 group">
-                          <img src={logo.src} alt={logo.alt} className="h-12 md:h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0" />
+                  <LazyCarouselContent className="-ml-2 md:-ml-4">
+                    {clientLogos.map((logo, index) => <LazyCarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                        <div className="flex items-center justify-center h-20 md:h-24 bg-white rounded-lg border border-gray-200 p-4 hover:bg-white hover:shadow-md transition-all duration-300 group" style={{ aspectRatio: '3/2' }}>
+                          <img 
+                            src={logo.src} 
+                            alt={`${logo.alt} - Cliente Rise Digital`}
+                            className="h-12 md:h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0" 
+                            loading="lazy"
+                            width="80"
+                            height="48"
+                          />
                         </div>
-                      </CarouselItem>)}
-                  </CarouselContent>
-                </Carousel>
+                      </LazyCarouselItem>)}
+                  </LazyCarouselContent>
+                </LazyCarousel>
               </div>
             </div>
 
