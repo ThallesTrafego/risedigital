@@ -58,7 +58,7 @@ const Index = () => {
     alt: "Cacau Show"
   }, {
     src: drogaRaiaLogo,
-    alt: "Droga Raia"
+    alt: "CertificadoPJ"
   }, {
     src: globalLogo,
     alt: "Global"
