@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { TrendingUp, Users, Award, Target, Globe, MessageCircle, Search, MapPin, Rocket, Star, Quote, Clock } from "lucide-react";
+import { TrendingUp, Users, Award, Target, Globe, MessageCircle, Search, MapPin, Rocket, Star, Quote, Clock, Instagram } from "lucide-react";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import riseDigitalLogo from "@/assets/rise-digital-logo-new.png";
@@ -342,9 +342,34 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
       {/* Footer */}
       <footer className="relative z-10 py-12 border-t border-border/30">
         <div className="container-custom text-center">
-          <a href="/" className="inline-block mb-4 hover:scale-105 transition-transform duration-300">
+          {/* Logo */}
+          <a href="/" className="inline-block mb-8 hover:scale-105 transition-transform duration-300">
             <img src={riseDigitalLogo} alt="Rise Digital" className="h-28 md:h-32 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
           </a>
+          
+          {/* Social Links */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
+            <a 
+              href="https://www.instagram.com/risedigital.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors duration-300 hover:scale-105"
+            >
+              <Instagram className="w-5 h-5 md:w-6 md:h-6" />
+              <span className="text-lg md:text-xl">@risedigital.br</span>
+            </a>
+            <a 
+              href="https://wa.me/5555999536040" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors duration-300 hover:scale-105"
+            >
+              <MessageCircle className="w-5 h-5 md:w-6 md:h-6" />
+              <span className="text-lg md:text-xl">(55) 55 9953-6040</span>
+            </a>
+          </div>
+          
+          {/* Copyright */}
           <p className="text-foreground/60">© 2025 Rise Digital. Todos os direitos reservados.</p>
         </div>
       </footer>
