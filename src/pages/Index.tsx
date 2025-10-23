@@ -79,14 +79,7 @@ const Index = () => {
       <header className="relative">
         <div className="container-custom md:py-8 my-0 px-0 py-[26px] mx-[50px] text-center">
           <a href="/" className="inline-block hover:scale-105 transition-transform duration-300">
-            <img 
-              src={riseDigitalLogo} 
-              alt="Rise Digital - Agência de Marketing Digital" 
-              className="h-28 md:h-32 w-auto"
-              width="256"
-              height="128"
-              loading="eager"
-            />
+            <img src={riseDigitalLogo} alt="Rise Digital - Agência de Marketing Digital" width="256" height="128" loading="eager" className="h-26 md:h-30 w-auto" />
           </a>
         </div>
       </header>
@@ -99,11 +92,7 @@ const Index = () => {
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-foreground/90 mb-12 max-w-4xl mx-auto leading-relaxed">Com milhões investidos em anúncios, milhares de leads gerados, experiência direta com empresários e certificações oficiais, ajudamos empresas a transformar marketing em crescimento real e previsível.</p>
           <div className="flex justify-center">
-            <a 
-              href="https://wa.me/5555999536040" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
+            <a href="https://wa.me/5555999536040" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="lg">
                 Quero Crescer com a Rise
               </Button>
@@ -260,11 +249,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
             </div>
 
             <div className="flex justify-center">
-              <a 
-                href="https://wa.me/5555999536040" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              <a href="https://wa.me/5555999536040" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="lg">Quero um plano de crescimento</Button>
               </a>
             </div>
@@ -293,15 +278,10 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
               }} className="w-full">
                   <LazyCarouselContent className="-ml-2 md:-ml-4">
                     {clientLogos.map((logo, index) => <LazyCarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                        <div className="flex items-center justify-center h-20 md:h-24 bg-white rounded-lg border border-gray-200 p-4 hover:bg-white hover:shadow-md transition-all duration-300 group" style={{ aspectRatio: '3/2' }}>
-                          <img 
-                            src={logo.src} 
-                            alt={`${logo.alt} - Cliente Rise Digital`}
-                            className="h-12 md:h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0" 
-                            loading="lazy"
-                            width="80"
-                            height="48"
-                          />
+                        <div className="flex items-center justify-center h-20 md:h-24 bg-white rounded-lg border border-gray-200 p-4 hover:bg-white hover:shadow-md transition-all duration-300 group" style={{
+                      aspectRatio: '3/2'
+                    }}>
+                          <img src={logo.src} alt={`${logo.alt} - Cliente Rise Digital`} className="h-12 md:h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0" loading="lazy" width="80" height="48" />
                         </div>
                       </LazyCarouselItem>)}
                   </LazyCarouselContent>
@@ -310,11 +290,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
             </div>
 
             <div className="flex justify-center">
-              <a 
-                href="https://wa.me/5555999536040" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              <a href="https://wa.me/5555999536040" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="lg">
                   Quero ter resultados assim com a Rise
                 </Button>
@@ -346,11 +322,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
             </div>
 
             <div className="flex justify-center">
-              <a 
-                href="https://wa.me/5555999536040" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              <a href="https://wa.me/5555999536040" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="lg" className="animate-pulse">
                   Quero meu projeto com a Rise
                 </Button>
@@ -371,11 +343,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
               Mais do que marketing genérico, entregamos uma rota clara para aumentar o faturamento da sua empresa com consistência e transparência. Não se trata apenas de anúncios, mas de construir previsibilidade e crescimento sustentável para o seu negócio.
             </p>
             <div className="flex justify-center">
-              <a 
-                href="https://wa.me/5555999536040" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              <a href="https://wa.me/5555999536040" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="lg">Clique aqui e fale com nosso time</Button>
               </a>
             </div>
@@ -393,21 +361,11 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
           
           {/* Social Links */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
-            <a 
-              href="https://www.instagram.com/risedigital.br?igsh=MXFlNWpza2xwcG5ycA==" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors duration-300 hover:scale-105"
-            >
+            <a href="https://www.instagram.com/risedigital.br?igsh=MXFlNWpza2xwcG5ycA==" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors duration-300 hover:scale-105">
               <Instagram className="w-5 h-5 md:w-6 md:h-6" />
               <span className="text-lg md:text-xl">@risedigital.br</span>
             </a>
-            <a 
-              href="https://wa.me/5555999536040" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors duration-300 hover:scale-105"
-            >
+            <a href="https://wa.me/5555999536040" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-foreground/60 hover:text-foreground transition-colors duration-300 hover:scale-105">
               <MessageCircle className="w-5 h-5 md:w-6 md:h-6" />
               <span className="text-lg md:text-xl">(55) 55 9953-6040</span>
             </a>
