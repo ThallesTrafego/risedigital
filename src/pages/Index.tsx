@@ -100,7 +100,7 @@ const Index = () => {
           <p className="text-lg md:text-xl lg:text-2xl text-foreground/90 mb-12 max-w-4xl mx-auto leading-relaxed">Com milhões investidos em anúncios, milhares de leads gerados, experiência direta com empresários e certificações oficiais, ajudamos empresas a transformar marketing em crescimento real e previsível.</p>
           <div className="flex justify-center">
             <a 
-              href="https://wa.me/5555999536040" 
+              href="https://wa.me/5555999536040?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20como%20a%20Rise%20Digital%20pode%20ajudar%20minha%20empresa%20a%20crescer" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -261,7 +261,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
 
             <div className="flex justify-center">
               <a 
-                href="https://wa.me/5555999536040" 
+                href="https://wa.me/5555999536040?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20plano%20de%20crescimento%20personalizado%20para%20minha%20empresa" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -311,7 +311,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
 
             <div className="flex justify-center">
               <a 
-                href="https://wa.me/5555999536040" 
+                href="https://wa.me/5555999536040?text=Ol%C3%A1!%20Vi%20os%20cases%20de%20sucesso%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20como%20ter%20resultados%20assim%20na%20minha%20empresa" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -347,7 +347,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
 
             <div className="flex justify-center">
               <a 
-                href="https://wa.me/5555999536040" 
+                href="https://wa.me/5555999536040?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20vagas%20dispon%C3%ADveis%20para%20novos%20projetos%20com%20a%20Rise%20Digital" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -372,7 +372,7 @@ nenhuma oportunidade de negócio seja perdida por falta de resposta.</p>
             </p>
             <div className="flex justify-center">
               <a 
-                href="https://wa.me/5555999536040" 
+                href="https://wa.me/5555999536040?text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20como%20a%20Rise%20pode%20transformar%20o%20marketing%20da%20minha%20empresa%20em%20crescimento%20real" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
